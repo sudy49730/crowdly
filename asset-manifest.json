@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.70e1d8ac.css",
-    "main.js": "./static/js/main.790df6fd.js",
+    "main.js": "./static/js/main.a65bede9.js",
     "static/media/background.png": "./static/media/background.5f4edf5f6e37816cd6c8.png",
     "static/media/welcome-lottie.mp4": "./static/media/welcome-lottie.453db7e93f5b5a7942c0.mp4",
     "static/media/no-post.png": "./static/media/no-post.44c9d9d0dcdcb674bf41.png",
@@ -13,10 +13,10 @@
     "static/media/notification.ttf?s3g3t9": "./static/media/notification.c5d9251ea82e42f75381.ttf",
     "index.html": "./index.html",
     "main.70e1d8ac.css.map": "./static/css/main.70e1d8ac.css.map",
-    "main.790df6fd.js.map": "./static/js/main.790df6fd.js.map"
+    "main.a65bede9.js.map": "./static/js/main.a65bede9.js.map"
   },
   "entrypoints": [
     "static/css/main.70e1d8ac.css",
-    "static/js/main.790df6fd.js"
+    "static/js/main.a65bede9.js"
   ]
 }
