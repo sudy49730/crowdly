@@ -21,7 +21,7 @@ import { withAuth } from "../";
 
 const ApplicationRouting = () => {
   return (
-    <Router>
+    <Router basename="/crowdly">
       <Routes>
         <Route path="home" element={withAuth(<HomePage />)}>
           <Route index element={<GreetingsPage />} />

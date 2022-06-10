@@ -3,17 +3,20 @@ import { Button, Input } from "rsuite";
 import { useState } from "react";
 import { db, notification } from "../../services";
 import { useSelector } from "react-redux";
+import { Label } from "../../components";
 
 const AboutPage = () => {
   const Description = () => {
     return (
       <div>
-        <h3>About this project</h3>
-        <p>Hello and welcome to Crowdly !</p>
+        <h3>
+          <Label i18nKey={"ABOUT_THIS_PROJECT"} />
+        </h3>
         <p>
-          It is an open source project developed for educational purpose and
-          fun. It's front end is built on top of React Js and the backend runs
-          on firebase, with a nodeJS server acting as a middleware.
+          <Label i18nKey={"HELLO_AND_WELCOME_TO_CROWDLY"} />
+        </p>
+        <p>
+          <Label i18nKey={"ABOUT_PAGE_DESCRIPTION"} />
         </p>
       </div>
     );
@@ -22,7 +25,9 @@ const AboutPage = () => {
   const About = () => {
     return (
       <div className="author-container">
-        <h5>Who's the author ?</h5>
+        <h5>
+          <Label i18nKey={"WHOS_THE_AUTHOR"} />
+        </h5>
         <span className="flex-container">
           <div className="left">
             <img
@@ -31,11 +36,12 @@ const AboutPage = () => {
             />
           </div>
           <div className="right">
-            <h6>Sudershan Singh</h6>
+            <h6>
+              <Label i18nKey={"AUTHOR_NAME"} />
+            </h6>
             <p>
-              Hi, my name is Sudershan Singh, and I'm the author of this
-              application. I enjoy developing such projects as part of my hobby,
-              there are more project like this listed on my&nbsp;
+              <Label i18nKey={"AUTHOR_PAGE_NOTE"} />
+              &nbsp;
               <a
                 href="https://github.com/sudy49730"
                 target="_blank"
@@ -43,8 +49,8 @@ const AboutPage = () => {
               >
                 Github
               </a>{" "}
-              profile. If you'd like to connect please feel free to reach out on
-              my&nbsp;
+              <Label i18nKey={"AUTHOR_PAGE_NOTE_2"} />
+              &nbsp;
               <a
                 href="https://wa.me/7568999246?text=Saw%20your%20project%20crowdly,%20and%20thought%20of%20saying%20Hello"
                 target="_blank"
@@ -59,8 +65,9 @@ const AboutPage = () => {
                 rel="noreferrer"
               >
                 LinkedIn
-              </a>{" "}
-              or drop an&nbsp;
+              </a>
+              ,
+              &nbsp;
               <a
                 href="mailto:sudershansingh900@gmail.com"
                 target="_blank"
@@ -78,11 +85,11 @@ const AboutPage = () => {
   const Contribution = () => {
     return (
       <div className="contribution-container">
-        <h5>Contribution</h5>
+        <h5>
+          <Label i18nKey={"CONTRIBUTION"} />
+        </h5>
         <p>
-          Since this is an open-source project you as a developer can contribute
-          as well. If you'd like to do so please feel free to clone the project
-          from the{" "}
+          <Label i18nKey={"CONTRIBUTION_2"} />{" "}
           <a
             target="_blank"
             rel="noreferrer"
@@ -90,7 +97,7 @@ const AboutPage = () => {
           >
             repository
           </a>
-          , and raise PRs to the develop branch.
+          <Label key={"CONTRIBUTION_3"} />
         </p>
       </div>
     );
@@ -121,10 +128,11 @@ const AboutPage = () => {
 
     return (
       <div className="feedback-container">
-        <h5>Have something to say ?</h5>
+        <h5>
+          <Label i18nKey={"FEEDBACK"} />
+        </h5>
         <p>
-          Your suggestion/feedback is valuable. Please use the form below and
-          let me know how you feel about crowdly.
+          <Label i18nKey={"FEEDBACK_2"} />
         </p>
         <Input
           value={feedbackContent}

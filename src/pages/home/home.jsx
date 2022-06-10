@@ -17,27 +17,28 @@ const HomePage = () => {
   const dispatch = useDispatch();
   const cachedNews = useSelector((state) => state.news);
 
+  const ActivityStatus = () => {
+    const [activity, setActivity] = useState(false);
+    window.addEventListener("mousemove", () => setActivity(true));
+    useEffect(() => {
+      const activityCheckerTimer = setInterval(() => {
+        setActivity(false);
+      }, 60 * 1000);
+      return () => clearInterval(activityCheckerTimer);
+    }, []);
+    return (
+      <span>
+        {
+          <>
+            <span>{activity ? "online " : "offline "}</span>
+            <Badge color={`${activity ? "green" : "red"}`} />
+          </>
+        }
+      </span>
+    );
+  };
+
   const PrimarySidePanel = () => {
-    const ActivityStatus = () => {
-      const [activity, setActivity] = useState(false);
-      window.addEventListener("mousemove", () => setActivity(true));
-      useEffect(() => {
-        const activityCheckerTimer = setInterval(() => {
-          setActivity(false);
-        }, 60 * 1000);
-        return () => clearInterval(activityCheckerTimer);
-      }, []);
-      return (
-        <span>
-          {
-            <>
-              <span>{activity ? "online " : "offline "}</span>
-              <Badge color={`${activity ? "green" : "red"}`} />
-            </>
-          }
-        </span>
-      );
-    };
     return (
       <div className="primary-side-panel">
         <div className="profile-picture-container">
@@ -203,24 +204,18 @@ const HomePage = () => {
                     loggedInUser["photoURL"] ||
                     "https://images.pexels.com/photos/2968939/pexels-photo-2968939.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   }
-                  alt="sudershan singh"
+                  alt={loggedInUser["displayName"]}
                 />
-                <h4>Sudershan Singh</h4>
-                <p>sudershansingh900@gmail.com</p>
+                <h4>{loggedInUser["displayName"]}</h4>
+                <p>{loggedInUser["email"]}</p>
                 <span>
-                  online&nbsp;
-                  <Badge color="green" />
+                  <ActivityStatus />
                 </span>
               </div>
               <hr />
               <div className="bio-section">
                 <b>Bio</b>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Facere fuga tenetur adipisci neque ipsa vero tempora officiis
-                  illum rerum explicabo nostrum harum ut asperiores quaerat a,
-                  quod magnam voluptatem aperiam?
-                </p>
+                <p>{loggedInUser["bio"]}</p>
               </div>
               <hr />
               <Outlet />

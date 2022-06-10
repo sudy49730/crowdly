@@ -1,5 +1,5 @@
 import "./settings.scss";
-import { Button, Input, InputNumber, SelectPicker } from "rsuite";
+import { Button, Input, SelectPicker } from "rsuite";
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
 import { notification, userService, auth } from "../../services";
@@ -10,9 +10,9 @@ import {
 
 const SettingsPage = () => {
   const loggedInUser = useSelector((state) => state.user);
-  const [bio, setBio] = useState(loggedInUser["bio"]);
-  const [phone, setPhone] = useState(loggedInUser["phoneNumber"]);
-  const [gender, setGender] = useState(loggedInUser["gender"]);
+  const [bio, setBio] = useState(loggedInUser["bio"] || "");
+  const [phone, setPhone] = useState(loggedInUser["phoneNumber"] || "");
+  const [gender, setGender] = useState(loggedInUser["gender"] || "");
 
   const dispatch = useDispatch();
 
@@ -39,9 +39,9 @@ const SettingsPage = () => {
     dispatch(SIGN_OUT_USER());
   };
 
-  const deleteAccount=()=>{
-    alert('Under development :)');
-  }
+  const deleteAccount = () => {
+    alert("Under development :)");
+  };
 
   const updateDetails = async () => {
     const updatedUserDetails = {};
@@ -147,11 +147,7 @@ const SettingsPage = () => {
               <tbody>
                 <tr>
                   <td className="title">Last login date</td>
-                  <td>2-May-2022</td>
-                </tr>
-                <tr>
-                  <td className="title">Last login location</td>
-                  <td>Ajmer</td>
+                  <td>{loggedInUser["lastLoginTime"]}</td>
                 </tr>
                 <tr>
                   <td className="title">Revoke all access</td>
