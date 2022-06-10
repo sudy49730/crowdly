@@ -1,0 +1,53 @@
+@import "../../styles/global.scss";
+
+.settings-page {
+  .settings-container {
+    .settings-content {
+      .personal-details {
+          h6{
+              margin: 2% 0;
+          }
+        .table {
+          width: 98%;
+          margin-left: 2%;
+          margin-top: 2%;
+          tr {
+            .title {
+              font-weight: bold;
+              width: 50%;
+            }
+            td {
+              padding: 1%;
+            }
+          }
+        }
+      }
+      .privacy-details {
+          h6{
+              margin: 2% 0;
+          }
+        .table {
+          width: 98%;
+          margin-left: 2%;
+          margin-top: 2%;
+          tr {
+            .title {
+              font-weight: bold;
+              width: 50%;
+            }
+            td {
+              padding: 1%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.red{
+    color: $red;
+}
+.green{
+    color: $green;
+}

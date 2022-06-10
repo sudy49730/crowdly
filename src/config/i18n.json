@@ -1,0 +1,26 @@
+{
+  "en": {
+    "CHANGE_LANGUAGE": "Change language",
+    "CHANGE_LANGUAGE_DESCRIPTION": "Please select a language of your choice",
+    "APP_NAME": "Crowdly",
+    "GREETING": "Hello there 👋",
+    "ABOUT_THIS_PROJECT": "About this project",
+    "MEET_THE_AUTHOR": "Meet the author",
+    "CONTINUE_WITH_GOOGLE": "Continue with Google",
+    "AUTHOR_DESCRIPTION": "Hi, my name is Sudershan Singh and I'am the creator of this app. I love developing such projects as part of my hobby and I hope you enjoy using it.If you'd like to connect you can always reach out to me on LinkedIn, Whatsapp or Instagram.",
+    "ABOUT_DESCRIPTION": "This project is purely for educational purpose and is open source so anyone can contribute for it's refinement.The front end of this project uses React and the backend runs on firebase.",
+    "DESCRIPTION": "Welcome to crowdly, a social media app built on top of ReactJS and Firebase. Crowdly helps you connect with others in the community, so you can share anything that's on your mind."
+  },
+  "hi": {
+    "CHANGE_LANGUAGE": "भाषा बदलें",
+    "CHANGE_LANGUAGE_DESCRIPTION": "कृपया अपने पसंद की भाषा चुनें",
+    "APP_NAME": "क्राउडली",
+    "GREETING": "नमस्ते 🙏",
+    "ABOUT_THIS_PROJECT": "इस प्रोजेक्ट के बारे में",
+    "MEET_THE_AUTHOR": "ऑथर से मिले",
+    "CONTINUE_WITH_GOOGLE": "गूगल के साथ शुरू करे",
+    "AUTHOR_DESCRIPTION": "नमस्ते, मेरा नाम सुदर्शन सिंह है और मैं इस ऐप का निर्माता हूं। मुझे अपने शौक के रूप में इस तरह की प्रोजेक्ट बनाना पसंद है| और मुझे आशा है कि आप इसका उपयोग करने का आनंद लेंगे। यदि आप मुझसे जुड़ना चाहते हैं तो आप हमेशा लिंक्डइन, व्हाट्सएप या इंस्टाग्राम पर मुझसे संपर्क कर सकते हैं।",
+    "ABOUT_DESCRIPTION": "यह प्रोजेक्ट विशुद्ध रूप से शैक्षिक उद्देश्य के लिए है और open source है इसलिए कोई भी इसके शोधन के लिए योगदान दे सकता है। इस प्रोजेक्ट का फ्रंट एंड रिएक्ट का उपयोग करता है और बैकएंड फायरबेस पर चलता है।",
+    "DESCRIPTION": "क्राउडली में आपका स्वागत है, यह एक सोशल नेटवर्क है जो React JS और Firebase पर बना है। क्राउडली आपको समुदाय के अन्य लोगों से जुड़ने में मदद करता है, ताकि आप अपने मन की कोई भी बात उनसे साझा कर सकें।"
+  }
+}

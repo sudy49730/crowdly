@@ -1,0 +1,30 @@
+.alerts-page {
+  width: 100%;
+  .header {
+    margin-bottom: 2%;
+  }
+  .alerts-container {
+    .alert {
+        margin: 2% 0;
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .picture {
+          width: 10%;
+          img {
+            width: 25px;
+            height: 25px;
+            object-fit: contain;
+          }
+        }
+        .content {
+          width: 90%;
+          h5,p{
+              margin: 1% 0;
+          }
+        }
+      }
+    }
+  }
+}
