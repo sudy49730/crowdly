@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "./crowdly/static/css/main.70e1d8ac.css",
-    "main.js": "./crowdly/static/js/main.9443adc6.js",
-    "static/media/background.png": "./crowdly/static/media/background.5f4edf5f6e37816cd6c8.png",
-    "static/media/welcome-lottie.mp4": "./crowdly/static/media/welcome-lottie.453db7e93f5b5a7942c0.mp4",
-    "static/media/no-post.png": "./crowdly/static/media/no-post.44c9d9d0dcdcb674bf41.png",
-    "static/media/author.png": "./crowdly/static/media/author.2e305056327376d7dd73.png",
-    "static/media/logo-no-bg.png": "./crowdly/static/media/logo-no-bg.f6fa1c22f296fc460ea7.png",
-    "static/media/notification.svg?s3g3t9": "./crowdly/static/media/notification.5d0158671dd860c714c4.svg",
-    "static/media/notification.eot": "./crowdly/static/media/notification.3657084dc0419605a91c.eot",
-    "static/media/notification.woff?s3g3t9": "./crowdly/static/media/notification.c392cd33d9d9de730f9d.woff",
-    "static/media/notification.ttf?s3g3t9": "./crowdly/static/media/notification.c5d9251ea82e42f75381.ttf",
-    "index.html": "./crowdly/index.html",
-    "main.70e1d8ac.css.map": "./crowdly/static/css/main.70e1d8ac.css.map",
-    "main.9443adc6.js.map": "./crowdly/static/js/main.9443adc6.js.map"
+    "main.css": "./static/css/main.70e1d8ac.css",
+    "main.js": "./static/js/main.790df6fd.js",
+    "static/media/background.png": "./static/media/background.5f4edf5f6e37816cd6c8.png",
+    "static/media/welcome-lottie.mp4": "./static/media/welcome-lottie.453db7e93f5b5a7942c0.mp4",
+    "static/media/no-post.png": "./static/media/no-post.44c9d9d0dcdcb674bf41.png",
+    "static/media/author.png": "./static/media/author.2e305056327376d7dd73.png",
+    "static/media/logo-no-bg.png": "./static/media/logo-no-bg.f6fa1c22f296fc460ea7.png",
+    "static/media/notification.svg?s3g3t9": "./static/media/notification.5d0158671dd860c714c4.svg",
+    "static/media/notification.eot": "./static/media/notification.3657084dc0419605a91c.eot",
+    "static/media/notification.woff?s3g3t9": "./static/media/notification.c392cd33d9d9de730f9d.woff",
+    "static/media/notification.ttf?s3g3t9": "./static/media/notification.c5d9251ea82e42f75381.ttf",
+    "index.html": "./index.html",
+    "main.70e1d8ac.css.map": "./static/css/main.70e1d8ac.css.map",
+    "main.790df6fd.js.map": "./static/js/main.790df6fd.js.map"
   },
   "entrypoints": [
     "static/css/main.70e1d8ac.css",
-    "static/js/main.9443adc6.js"
+    "static/js/main.790df6fd.js"
   ]
 }
